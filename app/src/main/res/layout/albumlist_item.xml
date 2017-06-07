@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/countlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:background="#66000000"
+        android:layout_alignBottom="@+id/imageView">
+        <ImageView
+            android:id="@+id/imageView_icon"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/_3sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_video_camera" />
+    <TextView
+        android:id="@+id/txtalbumname"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/imageView_icon"
+        android:maxWidth="@dimen/_80sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+
+        android:textColor="@android:color/white"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/txtcount"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/_10sdp"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/_3sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:text="TextView" />
+
+    </RelativeLayout>
+</RelativeLayout>
